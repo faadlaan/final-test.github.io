@@ -10,7 +10,7 @@
         <div>User > Delete</div>
     </div>
     <div class="main-content">
-        <h2>Apakah Anda Yakin Untuk Mengapus Level {{ $data->name }}</h2>
+        <h2>Apakah Anda Yakin Untuk Mengapus USER {{ $data->name }}</h2>
 
         <form action="{{ route('user.destroy', ['id' => $data->id]) }}" method="post">
             @csrf
