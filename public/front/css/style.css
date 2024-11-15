@@ -1,0 +1,96 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    padding: 100px;
+    justify-content: center;
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+form{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+form img{
+    width: 150px;
+}
+
+form p{
+    color: #a9a9a9;
+    margin-top: -15px;
+    font-size: small;
+    margin-bottom: 30px;
+}
+
+
+form .forget{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: aqua;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+form .forget a{
+    text-decoration: none;
+    color: #66ccff;
+}
+
+form .btn{
+    width: 100%;
+    background-color: #66ccff; /* Warna biru khas tombol primary */
+    color: #ffffff; /* Warna teks putih */
+    padding: 10px 20px; /* Padding untuk ukuran tombol */
+    border: none; /* Hilangkan border */
+    border-radius: 5px; /* Rounding sudut tombol */
+    font-size: 16px; /* Ukuran font */
+    cursor: pointer; /* Ganti kursor saat di-hover */
+    
+}
+
+
+
+/* hidden password */
+
+.password-container {
+    position: relative;
+    width: 250px;
+  }
+  .password-container input {
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 8px;
+  }
+  .password-container .toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+  .password-container i{
+    margin-bottom: -5px;
+  }
+
+  .password-container i {
+    width: 15px;
+    height: 15px; 
+    margin-top: 10px;
+  }
+
+  

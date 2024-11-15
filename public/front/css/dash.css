@@ -1,0 +1,325 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.sidebar {
+    width: 300px; /* Changed from 250px to 300px */
+    height: 100vh;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #e0e0e0;
+    padding-top: 20px;
+    transition: transform 0.3s ease;
+}
+.sidebar.hidden {
+    transform: translateX(-100%);
+}
+
+.sidebar a hr{
+   border: 1px #cccccc solid;
+}
+.sidebar img {
+   width: 150px;
+   height: 55px;
+   margin-left: 25px
+}
+.sidebar hr{
+   width: 80%;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+.sidebar ul li {
+    padding: 10px 20px;
+    margin: 5px 10px;
+}
+.sidebar ul li i{
+    width: 15px;
+    height: 15px;
+    color: gray;
+    margin-right: 10px;
+}
+.sidebar ul li a {
+    text-decoration: none;
+    color: gray;
+    display: block;
+}
+.sidebar ul li a:hover {
+    background-color: #f1f1f1;
+}
+.content {
+    margin-left: 300px; /* Changed from 250px to 300px */
+    padding: 20px;
+    background-color: #ececec;;
+    transition: margin-left 0.3s ease;
+    height: 725px;
+}
+.content.full-width {
+    margin-left: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    border-left: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    margin-top: -3px; /* Adjust this value to move the header up */
+    position: fixed;
+    width: calc(100% - 300px); /* Changed from 250px to 300px */
+    top: 0;
+    left: 300px; /* Changed from 250px to 300px */
+    z-index: 1000;
+    transition: left 0.3s ease, width 0.3s ease;
+}
+.header.full-width {
+    left: 0;
+    width: 100%;
+}
+.bell{
+   margin-right: 20px;
+   height: 30px;
+   width: 30px;
+   border: 1px gray solid;
+   border-radius: 50%;
+   text-align: center;
+   align-content: center;
+   
+}
+.header .menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+.header .user-info {
+    display: flex;
+    align-items: center;
+}
+.header .user-info img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.header .user-info a span {
+    font-size: 14px;
+    margin-right: 50px;
+    line-height: 1;
+}
+
+.abc i{
+    color: green;
+}
+
+.main-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px; /* Adjust this value to account for the fixed header */
+}
+
+.judul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.main-content h2 {
+    margin-top: 0;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+.main-content .actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+.main-content .actions a {
+    margin-left: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.main-content .actions .btn-add {
+    color: #28a745;
+    text-decoration: none;
+    border: 1px solid #28a745;
+    background-color: #fff;
+}
+.main-content .actions .btn-export {
+    text-decoration: none;
+    color: #007bff;
+    border: 1px solid #007bff;
+    background-color: #fff;
+}
+.main-content .actions .btn-import {
+    text-decoration: none;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+    background-color: #fff;
+}
+.main-content table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.main-content table th, .main-content table td {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    text-align: left;
+    border-left: none;
+    border-right: none;
+}
+.main-content table th {
+    background-color: #f8f9fa;
+}
+.main-content table td .btn-edit {
+    background-color: #17a2b8;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.main-content table td .btn-delete {
+    background-color: #dc3545;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.pagination{
+    margin-top: 10px;
+}
+
+a{
+   text-decoration: none;
+   color: gray;
+}
+
+.menu div{
+   width: 10px;
+   height: 10px;
+   border: 1px gray solid;
+}
+
+.set{
+    margin-left: 130px;
+}
+
+table a{
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #17a2b8;
+    color: #ffffff;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+
+.kemsi{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.kemsi a{
+    border: 1px solid rgb(200, 200, 200);
+    background-color: #fff;
+}
+
+.main-content hr{
+    border: 1px solid #cccccc;
+    margin-top: -1px ;
+}
+
+
+
+.aksi{
+    display: flex;
+    justify-content: space-between;
+}
+.aksi a{
+    color: black;
+}
+
+.main-content table {
+    width: 100%;
+    border-collapse: collapse;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    table-layout: fixed;
+}
+
+.main-content table th,
+.main-content table td {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+    border-left: none;
+    border-right: none;
+    text-align: left;
+}
+
+
+
+/* search */
+
+.cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.left-section,
+.right-section {
+    display: flex;
+    align-items: center;
+}
+
+.left-section span,
+.right-section span {
+    margin-right: 10px;
+}
+
+.pag {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    background-color: #fff;
+}
+
+.pag select {
+    border: none;
+    outline: none;
+    margin-left: 5px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.button i {
+    margin-right: 5px;
+}
