@@ -31,6 +31,11 @@ class DataController extends Controller
 
     public function store(Request $request)
     {
+        $validated = $request->validate([
+            "email" => "unique:data|required",
+            "phone" => "unique:data|required",
+        ]);
+
         $data = Data::create($request->all());
         return redirect()->route('user');
     }
@@ -44,6 +49,12 @@ class DataController extends Controller
 
     public function update(Request $request, $id)
     {
+
+        $validated = $request->validate([
+            "email" => "unique:data|required",
+            "phone" => "unique:data|required",
+        ]);
+
         $data = Data::findOrFail($id);
         $data->update($request->all());
         return redirect()->route('user');
