@@ -29,7 +29,7 @@
                 </div>
                 <div class="mb-3">
                     <label for="email">Email</label>
-                    <input type="text" name="email" class="form-control" id="name" required value="{{ $data->phone }}">
+                    <input type="text" name="email" class="form-control" id="name" required value="{{ $data->email }}">
                 </div>
                 <div class="mb-3">
                     <label for="phone">Nomer HP</label>

@@ -57,5 +57,6 @@ class LevelController extends Controller
     public function destroy(Request $request, $id)
     {
         Level::findOrFail($id)->delete();
+        return redirect()->route('level');
     }
 }
