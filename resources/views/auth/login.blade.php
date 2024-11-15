@@ -1,6 +1,8 @@
 <x-guest-layout>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
+    <x-input-error :messages="$errors->get('phone')"  />
+
 
     <form method="POST" action="{{ route('login') }}">
         @csrf
@@ -16,8 +18,7 @@
 
         <!-- Email Address -->
         <div>
-            <x-input-error :messages="$errors->get('email')"  />
-            <x-text-input id="phone" class="block mt-1 w-full" type="tel" name="phone" :value="old('phone')" required autofocus autocomplete="username" placeholder="Nomer HP" />
+            <x-text-input id="phone" class="block mt-1 w-full" type="tel" name="phone" :value="old('phone')" required autofocus autocomplete="username" placeholder="Nomer HP" required />
         </div>
 
         <!-- Password -->
@@ -26,7 +27,7 @@
             <x-text-input id="password" class="block mt-1 w-full"
                             type="password"
                             name="password"
-                            required autocomplete="current-password" placeholder=" Password" />
+                            required autocomplete="current-password" placeholder=" Password" required />
                             <span class="toggle-password" onclick="togglePasswordVisibility()">
                                 <i class="fas fa-eye"></i>
                             </span>
