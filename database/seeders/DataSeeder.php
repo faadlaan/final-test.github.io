@@ -25,19 +25,19 @@ class DataSeeder extends Seeder
             [
                 'name' => 'Tomi',
                 'levels_id'=> '3',
-                'email'=> '@example.com',
+                'email'=> '@example2.com',
                 'phone'=> '08123456789'
             ],
             [
                 'name' => 'Tomo',
                 'levels_id'=> '3',
-                'email'=> '@example.com',
+                'email'=> '@example3.com',
                 'phone'=> '08123456789'
             ],
             [
                 'name' => 'Thoriq',
                 'levels_id'=> '3',
-                'email'=> '@example.com',
+                'email'=> '@example4.com',
                 'phone'=> '08123456789'
             ],
         ];
