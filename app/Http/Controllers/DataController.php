@@ -56,9 +56,10 @@ class DataController extends Controller
 
 
         $validated = $request->validate([
-           
-            "email" => "unique:data",
-            "phone" => "unique:data",
+            "name" => "required",
+            "email" => "unique:data|required",
+            "phone" => "unique:data|required",
+            "levels_id" => "required",
         ]);
 
         $data = Data::findOrFail($id);

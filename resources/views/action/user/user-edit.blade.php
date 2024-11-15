@@ -25,19 +25,19 @@
                 @method('PUT')
                 <div class="mb-3">
                     <label for="name">Name Level</label>
-                    <input type="text" name="name" class="form-control" id="name" required value="{{ $data->name }}">
+                    <input type="text" name="name" class="form-control" id="name"  value="{{ $data->name }}">
                 </div>
                 <div class="mb-3">
                     <label for="email">Email</label>
-                    <input type="text" name="email" class="form-control" id="name" required value="{{ $data->email }}">
+                    <input type="text" name="email" class="form-control" id="name"  value="{{ $data->email }}">
                 </div>
                 <div class="mb-3">
                     <label for="phone">Nomer HP</label>
-                    <input type="text" name="phone" class="form-control" id="name" required value="{{ $data->phone }}">
+                    <input type="text" name="phone" class="form-control" id="name"  value="{{ $data->phone }}">
                 </div>
                 <div class="mb-3">
                     <label for="levels_id">Level</label>
-                    <select type="text" name="levels_id" class="form-control" id="name" required>
+                    <select type="text" name="levels_id" class="form-control" id="name" >
                         <option value="{{ $data->levels->id }}">{{ $data->levels->name }}</option>
                         @foreach ($level as $item)
                             <option value="{{ $item->id }}">{{ $item->name }}</option>
